@@ -2,7 +2,7 @@
 package tomac.myproject;
 
 /**
- *
+ * This is a text processor
  * @author Antonio Tomac <antonio.tomac@mediatoolkit.com>
  */
 public interface Processor {
