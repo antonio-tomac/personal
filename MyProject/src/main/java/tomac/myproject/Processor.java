@@ -7,6 +7,8 @@ package tomac.myproject;
  */
 public interface Processor {
 	
+	public static final int P = 1;
+
 	/**
 	 * method processes given text
 	 * @param text
