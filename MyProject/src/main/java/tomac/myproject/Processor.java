@@ -7,7 +7,7 @@ package tomac.myproject;
  */
 public interface Processor {
 	
-	public static final int P = 1000;
+	public static final long P = 1L;
 
 	/**
 	 * method processes given text
