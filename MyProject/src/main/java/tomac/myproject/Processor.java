@@ -10,7 +10,7 @@ public interface Processor {
 	/**
 	 * method processes given text
 	 * @param text
-	 * @return 
+	 * @return processed text
 	 */
     String process(String text);
 }
