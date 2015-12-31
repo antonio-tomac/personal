@@ -139,9 +139,6 @@ public class Rsa {
 		String decryptedA = Rsa.decrypt(encryptedAB, keyPairB.getPublicKey());
 		String decrypted = Rsa.decrypt(decryptedA, keyPairA.getPrivateKey());
 		System.out.println(textOriginal);
-		System.out.println(encryptedA);
-		System.out.println(encryptedAB);
-		System.out.println(decryptedA);
 		System.out.println(decrypted);
 	}
 
