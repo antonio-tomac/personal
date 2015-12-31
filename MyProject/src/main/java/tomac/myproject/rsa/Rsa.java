@@ -12,6 +12,8 @@ import tomac.myproject.rsa.Rsa.KeyPair.Key;
  */
 public class Rsa {
 
+	private static final Pattern REGEX  = Pattern.compile("\\((.*?)\\)");
+
 	public static class KeyPair {
 
 		public static class Key {
@@ -110,8 +112,7 @@ public class Rsa {
 	}
 
 	public static String decrypt(String encrypted, Key key) {
-		Pattern regex = Pattern.compile("\\((.*?)\\)");
-		Matcher matcher = regex.matcher(encrypted);
+		Matcher matcher = REGEX.matcher(encrypted);
 		StringBuilder sb = new StringBuilder();
 		BigInteger mod = BigInteger.valueOf(1 << 16);
 		while (matcher.find()) {
